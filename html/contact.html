@@ -1,0 +1,101 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+          <link rel="stylesheet" type="text/css" href="../css/contact.css">
+           <link rel="stylesheet" type="text/css" href="../css/contactform.css">
+          <title>Movies</title>
+        </head>
+        <body>
+
+        <nav class="navbar">
+            <ul class="navbar">
+              <li><a href="#" id="home">Home</a></li>
+              <li><a href="#" id="movies">Movies</a></li>
+              <li><a href="#" id="series">Series</a></li>
+               <li><a href="#" id="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="show">Menu</a>
+          </nav>
+
+        <div class="bgimg-1">
+          <div class="caption">
+            <span class="border">Contact</span>
+          </div>
+        </div>
+
+        <div class="main-arrow">
+          <a class="arrow-wrap" href="#arrowpoint">
+            <span class="arrow">
+            </span>
+          </a>
+        </div>
+
+        <div class="contentarea" id="arrowpoint">
+          <h3 class="h3text1">Contact me</h3>
+          <p>Here you have the opportunity to send me your favorite movie or serie. And if you are really lucky, maybe your favorite choice gets on the page.</p>
+    
+    <div class="divForm">
+      <form id="Form" method="post" action="">
+        <div>
+          <input type="text" placeholder="Firstname" id="contact_firstname" name="firstname"></input>
+        <span class="error"><img src="https://people.dsv.su.se/~jojo7367/x-mark.png"></span>
+        </div>
+        
+        <div>
+          <input type="text" placeholder="Lastname" id="contact_lastname" name="lastname"></input>
+          <span class="error"><img src="https://people.dsv.su.se/~jojo7367/x-mark.png"></span>
+        </div>
+          
+          <div>
+            <input type="text" placeholder="john@mail.com" id="contact_email" name="email"></input>
+           <span class="error"><img src="https://people.dsv.su.se/~jojo7367/x-mark.png"></span>
+          </div>
+           
+           <div>
+             <input type="text" placeholder="Verify email" id="contact_Vemail" name="Vemail"></input>
+             <span class="error"><img src="https://people.dsv.su.se/~jojo7367/x-mark.png"></span>
+           </div>
+
+           <div>
+              <input type="text" id="contact_note" placeholder="Favorite movie or serie"name="note"></input>
+              <span class="error"><img src="https://people.dsv.su.se/~jojo7367/x-mark.png"></span>
+           </div>
+          
+          <div>
+            <input type="submit" value="Submit" id="submitform">
+          </div>
+          
+      </form> 
+      </div>
+        </div>
+
+
+        <div id="myModal" class="modal">
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">x</span>
+                  <h2 class="modalheader"></h2>
+              </div>
+              <div class="modal-body">
+                <p class="modalP"></p>
+              </div>
+          </div>
+            
+        </div>
+
+        <div class="divfooter">
+          <div class="footer">
+            <p>Created by Johan Johansson</p>
+          </div>
+        </div>
+
+        <script src="../js/menuSlide.js"></script>
+        <script src="../js/arrowscroll.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/modal.js"></script>
+        <script src="../js/contactform.js"></script>
+        </body>
+        </html>

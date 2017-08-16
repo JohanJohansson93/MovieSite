@@ -1,0 +1,110 @@
+/*
+  Remove outline foucs on all elements.
+  */
+*:focus {
+    outline: none;
+}
+/*
+The divForm gets a padding, width and a margin.
+*/
+.divForm{
+  padding: 10px;
+  width: 25%;
+  margin: 0 auto;
+}
+/*
+  Sets the display to none.
+  */
+.error{
+  display: none;
+}   
+/*
+  Sets the color to red.
+  */
+.error_show{
+  color: red;
+ 
+}
+/*
+  Sets the border on all input elements with class invalid.
+  */
+input[type=text].invalid{
+  border: 2px solid #ffad99;
+}
+/*
+  Sets the border on all input elements with class valid.
+  */
+input[type=text].valid{
+  border: 2px solid #b3e6b3;
+}
+/*
+The input tag gets styled with a width, padding, margin and a border-radius. 
+The tags text is centered in the middle.
+*/
+input[type=text]{
+  width: 100%;
+  padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+input[type=text]:hover, input[type=text]:focus,input[type=text]:active{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*
+The input tag submit gets styled with a border-radius, background-color,
+box-shadow and a width.
+*/
+input[type=submit]{
+   width: 100%;
+    background-color: #455868;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+/*
+The input gets a box-shadow and a pointer when hover, focus and active.
+*/
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+/*
+If the width is below 800px the divForm sets to 100% width.
+*/
+@media screen and (max-width: 800px){
+  .divForm{
+    width: 100%;
+  }
+}
+}

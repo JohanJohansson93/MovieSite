@@ -1,0 +1,618 @@
+    /*
+  All elements sets to border-box.
+  */  
+  * {
+    box-sizing: border-box;
+  }
+   /*
+  Remove content before and after navbar
+  */
+  .navbar:before,
+  .navbar:after {
+      content: " ";
+      display: table;
+  }
+   /*
+  Remove content on both sides after
+    navbar.
+  */
+  .navbar:after {
+      clear: both;
+      bac
+  }
+   /*
+  Sets a scales on the navbar element.
+  */
+  .navbar {
+      *zoom: 1;
+  }
+  /*
+The body gets a 100% height and a margin. The font sets to sans-serif and
+the text gets a color.
+*/
+  body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  /*
+  The nav element gets a height, width, background.
+  The position sets to fixed and sets the top edge to 0.
+  */
+  nav {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #283744;
+   
+  }
+   /*
+  The ul gets a padding, margin and a height.
+  */
+  nav ul {
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+  }
+  /*
+  The li displays inline and lets the li float to the left.
+  */
+  nav li {
+    display: inline;
+    float: left;
+  }
+  /*
+  The a tag gets a color and the element is set to inline-block.
+  Width sets to 100px, text-align sets to center with no text-decoration.
+  Line-height sets to 40px and the text gets a shadow.
+  */
+  nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+  }
+   /*
+  The a-tags in the li element gets a styled right border.
+  The box-sizing gets set to border-box.
+  */
+  nav li a {
+    border-right: 1px solid #576979;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+   /*
+  The a-tag that is the last child element of its parent gets
+  a right border set to 0.
+  */
+  nav li:last-child a {
+    border-right: 0;
+  }
+  /*
+  The a-tags that is child to nav gets a background-color and
+  a cursor when hovered and active.
+  */
+  nav a:hover, nav a:active {
+    background-color: #8c99a4;
+    cursor: pointer;
+  }
+   /*
+  Sets the a-tag to not be displayed.
+  */
+  nav a.show {
+    display: none;
+  }
+  /*
+Sets the position of .bgimg-1 and .bgimg-2 with an opacity.
+Sets the background-attachment to fixed. Sets the background-position to center.
+Sets the background-repeat to no-repeat and the background-size to cover.
+*/
+  .bgimg-1, .bgimg-2{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+   /*
+  This class gets an background-image and min-height sets to 100%.
+  */
+  .bgimg-1 {
+    background-image: url("https://people.dsv.su.se/~jojo7367/old-camera.jpg");
+    min-height: 100%;
+  }
+  /*
+  This class gets an background-image and min-height sets to 400px.
+  */
+  .bgimg-2 {
+    background-image: url("https://people.dsv.su.se/~jojo7367/dark.jpg");
+    min-height: 400px;
+  }
+  /*
+  Sets the class caption to position absolute. Sets the left attribute to 0.
+  Sets the top attribute to be 50% and the width to be 100%.
+  The text gets centered with color to be black.
+*/
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+   /*
+   Text in the class contentarea gets color grey and sets to be centered.
+    The background sets to white and a padding with 50px*80px.
+
+  */
+  .contentarea{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+  }
+   /*
+  The class gallery's text sets to be centered. Margin sets to 0 auto.
+  */
+  .gallery{
+    text-align:center;
+    margin: auto;
+    max-width: 980px;
+  }
+   /*
+  The class area gets a padding with 0.01 em on top and bottom.
+  Right and left gets a padding with 16px.
+  */
+  .area{
+    padding: 0.01em 16px;
+  }
+  /*
+  The class container gets a padding on top with 64px and 64px on bottom.
+  */
+  .container{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  /*
+  After the three classes gallery, area and container the content is set to "".
+  The three classes will behave like table elements. And the clear attribute clear everything on both sides. 
+  */
+  .gallery:after, .area:after, .container:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*
+    The text-align is set to center for this class.
+  */
+  .h3text1{
+    text-align:center;
+  }
+  /*
+    This class floats to the left with an width of 32.9%, and with a padding 3px * 8px;
+  */
+  .colg{
+    float: left;
+    width: 32.999%;
+    padding: 3px 8px;
+  }
+  /*
+  All images gets an width of 100%, a border radius of 5px, min-height wit 192px and max-height with 192px.
+  All images will be displayed as block elements.
+*/
+img{
+    display: block;
+    min-height: 192px;
+    max-height: 192px;
+    width: 100%;
+    border-radius: 5px;
+  }
+   /*
+    After all image tags the box-sizing is set to be inherit.
+  */
+  img:after{
+    box-sizing: inherit;
+  }
+  /*
+    The image tags in class col gets opacity and transition.
+  */
+  .colg img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  /*
+    When hover over the images in the col class the opacity is set to 5, and a cursor appears.
+  */
+  .colg:hover img {
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 999; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enables scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black with opacity */
+  }
+   /*
+    The class modal-content's margin is set to be auto. The class should also display as block.
+    The class width is set to 100% and a max-width of 700px.
+  */
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      
+  }
+  /*
+    This elements min-height and max-height sets to 100%
+  */
+  #imgModal{
+      min-height: 100%;
+      max-height: 100%;
+  } 
+  /*
+    The caption element's margin is set to auto, the display is set to be block.
+    The width is set to be 80% and the max-width is set to 700px.
+    Text-align is set to be centered and the color of the text is set to grey.
+    Top and bottom gets 10px padding and right and left set to 0.
+    The height of the element sets to 150px.
+  */
+  #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+  }
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption { 
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  }
+  /*
+    Sets transform with scale from 0 - 1.
+  */
+  @-webkit-keyframes zoom {
+      from {
+        -webkit-transform:scale(0)
+      } 
+      to {-webkit-transform:scale(1)
+      }
+  }
+/*
+    Sets transform with scale from 0 - 1.
+  */
+  @keyframes zoom {
+      from {
+        transform:scale(0)
+      } 
+      to {
+        transform:scale(1)
+      }
+  }
+
+   /* The Close Button with absolute position and 15px to the top element.
+      The button will be postioned 35px from the right of its nearest ancestor.
+      The color is set to be lightgrey. The font-size is set to 40px and with font-weight bold.
+      Atleast there is a transition to be 0.3s.
+   */
+  .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+/*
+  If hover and focus on the close button the color is set to #bbb.
+  The text-decoration will be set to none and a pointer will appear.
+*/
+  .close:hover,
+  .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+   /*
+    divfooter's postion is set to relative.
+  */
+  .divfooter{
+    position:relative;
+  }
+    /*
+    The class footer's color is set to be #ddd and background-color to be #282E34.
+    The padding is set 50px for top and bottom, and 80px for right and left.
+    The text is set to be centered.
+  */
+  .footer{
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: center;
+  }
+  /*
+    The class border's background-color is set to #111 and color is set to white.
+    The class has a padding of 18px for top, right, left and bottom.
+    The font-size of the text is set to 25px and letter-spacing is set to 10px.
+    The borders are set to have a radius of 5px.
+  */
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    border-radius: 5px;
+  }
+  /*
+    All h3 elements have letter-spacing of 5px and are uppercase.
+    The font is set to 20px and sans-serif, with color black.
+  */
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /*
+    The class main-arrow has a width of 100% and position is set to relative.
+    The background-color is set to be white.
+  */
+  .main-arrow {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    }
+  /*
+    The class arrow-wrap has a absolute position. Its left edge is set to 50% from its nearest ancestor.
+    Top is set to be -3em of the nearest ancestor. The left margin is set to -2em.
+    The text-align is set to center. And display is set to inline-block. The border-radiues is set to 50%.
+    And the border has 2px solid white border. The font-size is set to 1.3em. The cursor is set as pointer. 
+  */
+  .arrow-wrap {
+    position: absolute;
+    left: 50%;
+    top: -3em;
+    margin-left: -2em;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+    }
+   /*
+    The arrow class is displayed as inline-block container.
+    The width and height is set to 4em. Background-color is lightblue with opacity.
+    The border-radius is set to be 50%.
+  */
+  .arrow {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    background-color: rgba(0, 55, 68, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    }
+  /*
+    After the arrow class the content is set to "".
+    The display is set to inline-block. The margin-top is set to 1em,
+    the width is set to 1.4 em and height is set to 1.4 em.
+    Both border-top and border-right is set to 1px solid white border.
+    Transform is set to rotate 135 deg.
+  */
+  .arrow:after {
+    content: '';
+    display: inline-block;
+    margin-top: 1em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+     -o-transform: rotate(135deg);
+        transform: rotate(135deg); 
+      }
+
+   /* Makes the arrow move gradually  */
+  @-webkit-keyframes arrows {
+    0% {
+      top: 0; }
+    10% {
+      top: 12%; }
+    20% {
+      top: 0; }
+    30% {
+      top: 12%; }
+    40% {
+      top: -12%; }
+    50% {
+      top: 12%; }
+    60% {
+      top: 0; }
+    70% {
+      top: 12%; }
+    80% {
+      top: -12%; }
+    90% {
+      top: 12%; }
+    100% {
+      top: 0; } }
+
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s; /* Applies animation */
+    -webkit-animation-delay: 3s; /*Applies an animation delay for 3 seconds. */
+  }
+
+  .arrow-wrap .arrow:hover {
+    background-color: rgba(40, 55, 68, 1.0); /* Applies a background-color with opacity on hover */
+  }
+  
+    /*
+All these css-effects will be applied if the device's
+min-width is 450px and max-width is 800px.
+*/    
+  @media screen and (min-width: 450px) and (max-width: 800px){
+    img{
+        width: 100%; /* Sets the image width to 100% */
+        height: auto; /* Sets the height to auto */
+        display: block; /* Sets the image to display as block */
+        min-height: 192px; /* Applies the min-height to 192px */
+        max-height: 192px; /* Applies the max-height to 192px */
+    }
+    #imgModal{
+      min-height: 80%; /* Sets the min-height to be 80% of its original height*/
+      max-height: 80%; /* Sets the max-height to be 80% of its original height*/
+    }
+  }  
+   /*
+  All these css-effects will be applied if the device
+  max-width is 600px or less.
+*/ 
+  @media screen and (max-width: 600px) {
+    nav { 
+        height: auto; /*Sets the height to auto */
+      }
+      nav ul {
+        width: 100%; /* Sets the width to be 100% */
+        display: block; /* Displays the ul as block */
+        height: auto; /* Sets the height to auto */
+      }
+       nav li {
+        width: 50%; /* Applies a width of 50% */
+        float: left; /* Sets the li elements to float left */
+        position: relative; /* Sets the position to be relative */
+      }
+      nav li a {
+      border-bottom: 1px solid #576979; /*Sets border-bottom with 1px */
+      border-right: 1px solid #576979; /*Sets border-right with 1px */
+    }
+      nav a {
+        text-align: left; /* Sets the text to be aligned to the left */
+        width: 100%; /* Applies 100% width to the navbar*/
+        text-indent: 25px; /* Sets the text-indent to be 25px */
+      }
+      
+  }
+
+/*
+All these css-effects will be applied if the device
+max-width is 425px or less.
+*/
+  @media only screen and (max-width : 425px) {
+    nav {
+      border-bottom: 0; /* Sets the border-bottom to 0 */
+    }
+    nav ul {
+      display: none; /* Set the display to none */
+      height: auto; /* Sets the height to auto */
+    }
+    nav a.show {
+      display: block; /* Displays the navs a-tag as block */
+      background-color: #283744; /* Applies background-color */
+      width: 100%; /* Sets the width to be 100% */
+      position: relative; /*Sets the position to be relative */
+    }
+    .show:after{
+      content:""; /* No content will be displayed after the a-tag */
+      width: 30px; /* Sets the width to be 30px */
+      height: 30px; /* Sets the height to be 30px */
+      display: inline-block; /*Sets the a-tag to be displayed as inline-block */
+      position: absolute; /* Sets the position the bo absloute */
+      right: 15px; /* Sets 15px padding at the right of the a-tag */
+      top: 10px; /* Sets 10px padding at the top of the a-tag */
+      background: url("../img/menu.png") no-repeat; /* Sets the menu background image with no repeat */
+    }
+    .contentarea{
+      padding: 50px 20px; /* Applies padding to a div named contentarea */
+    }
+    .arrow-wrap{
+      font-size: 1em; /* Applies the arrow font-size to be 1em */
+    }
+    .modal{
+      width: 100%; /* Sets the width to 100% */
+     } 
+    .colg{
+      width: 100%; /* Sets the width to 100% */
+    }
+  img{
+    width: 100%; /* Sets the width to 100% */
+    height: auto; /* Sets the height to auto */
+    display: block; /*Displays this element as an block element */
+    min-height: 225px; /* Sets the image min-height to be 225px */
+    max-height: 225px; /* Sets the image max-height to be 225px */
+  }
+  #imgModal{
+      min-height: 60%; /* Applies the min-heigt to 60% of the image original height */
+      max-height: 60%; /* Applies the max-heigt to 60% of its image original height */
+      max-width:  80%; /* Applies the min-heigt to 60% of its image original width */
+  }
+}
+/*
+All these css-effects will be applied if the device
+max-width is 375px or less.
+*/
+@media only screen and (max-width: 375px){
+  img{
+      width: 100%; /* Applies the width to 100% */
+      min-height: 200px; /* Applies the min-height to 200px */
+      max-height: 200px; /* Applies the max-height to 200px */
+    }
+}
+  /*
+All these css-effects will be applied if the device
+max-width is 320px or less.
+*/
+  @media only screen and (max-width : 320px) {
+    nav li {
+      display: block; /*Displays this element as an block element */
+      float: none; /*Sets the element to not float */
+      width: 100%; /*Sets the width to 100% */
+    }
+    nav li a {
+      border-bottom: 1px solid #576979; /* Applies an border-bottom */
+    }
+    img{
+      width: 100%; /* Applies the width to 100% */
+      min-height: 177px; /* Applies the min-height to 177px */
+      max-height: 177px; /* Applies the max-height to 177px */
+    }
+  }
